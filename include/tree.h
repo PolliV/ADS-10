@@ -48,7 +48,7 @@ class Tree {
   }
 
  public:
-    std::vector<char> prover(int i) const {
+    std::vector<char> prover(int i) {
         if (permutations.size() < i) {
           return std::vector<char>();
         } 
