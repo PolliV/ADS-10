@@ -48,8 +48,10 @@ class Tree {
   }
 
  public:
-    std::vector<char> func(int i) const {
-        if (permutations.size() < i) return std::vector<char>();
+    std::vector<char> prover(int i) const {
+        if (permutations.size() < i) {
+          return std::vector<char>();
+        } 
         return permutations[i];
     }
     explicit Tree(std::vector<char> child): root(nullptr) {
